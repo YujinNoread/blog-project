@@ -1,4 +1,8 @@
 /* tablet */
+.col-xs-12{
+	flex: 0 0 100%;
+	max-width: 100%;
+}
 @media(min-width:768px){
 	.col-sm-1{
 		flex: 0 0 8.333%;
