@@ -109,8 +109,10 @@ body {
 }
  .slider__item {
 	background-image: url("img/slider/img1.png");
-	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	padding: 50px 0 50px 0;
+	background-size: 100% 100%;
 	text-align: center;
 }
  .slider__title {
@@ -147,6 +149,24 @@ body {
  .button a{
 	color: white;
 	text-decoration: none;
+}
+.glide__bullet {
+	background-color: transparent;
+	border: 1px solid #ffffff;
+}
+.glide__bullet--active {
+	background-color: white;
+}
+.glide__bullet:hover, .glide__bullet:focus {
+	border: none;
+	background-color: rgba(255, 255, 255, 0.75);
+}
+.glide__bullets {
+	left: auto;
+	right: 10%;
+}
+.glide--swipeable {
+	cursor: default;
 }
 /*******************************************************************************************************************************************/
  .title{/*Заголовки*/
@@ -773,5 +793,10 @@ body {
 	}
 	.header__search{
 		display: none;
+	}
+	.glide__bullets {
+		left: 50%;
+		right: auto;
+		bottom: 1em;
 	}
 }
