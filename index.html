@@ -412,11 +412,33 @@
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-6 touch__column">
-						<form action="" class="touch__form">
-							<button>
-								<div class="touch__button button">send message</div>
-							</button>
-						</form>
+						<div class="touch__button button" id="touch__button">send message</div>
+						<div class="form">
+							<div class="form-block">
+								<form action="" class="touch__form">
+									<div class="close-btn">X</div>
+									<div class="form__row">
+										<div class="form-fields">
+											<h3>Your name</h3>
+											<input type="text">
+										</div>
+										<div class="form-fields">
+											<h3>Your email</h3>
+											<input type="text">
+										</div>
+									</div>
+									<div class="form-fields">
+										<h3>Your message</h3>
+										<textarea name="message" id="" cols="35" rows="5"></textarea>
+									</div>
+									<div class="form-fields">
+										<button>
+											<div class="touch__button button form-button">send message</div>
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -444,6 +466,18 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal">
+		<div class="modal-block">
+			<form action="">
+				<div class="close-button">X</div>
+				<h3>Do you want subscribe to the newsletter?</h3>
+				<div class="form-fields">
+					<input type="text" placeholder="Your email">
+				</div>
+				<button>Subscribe</button>
+			</form>
+		</div>
+	</div>
 	<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 	<script src="app.js"></script>
 </body>
