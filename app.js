@@ -69,3 +69,5 @@ modal.addEventListener("click", function(event){
 		closeModal();
 	}
 })
+
+AOS.init();
