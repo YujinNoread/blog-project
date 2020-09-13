@@ -60,10 +60,11 @@ body {
 	margin: 9px;
 	text-decoration: none;
 }
- .header__menu li:hover{
-	border: 2px solid #575d64;
+.header__menu li:hover,  .header__menu li.current{
+	border-color: #575d64;
 	border-radius: 5px;
 }
+
  .header__search {
 	align-self: center;
 	border: 2px solid #3c4147;
@@ -186,9 +187,15 @@ body {
 	height: 35px;
 	background-color: #e1e6ea;
 }
+.modest{
+	margin-top: -79px;
+	padding-top: 79px;
+}
+.modest .container{
+	padding-top: 79px;
+}
  .modest__title {
 	color: #292f36;
-	margin-top: 30px;
 }
  .modest__row {
 	display: flex;
@@ -276,8 +283,14 @@ body {
 }
 /*******************************************************************************************************************************************/
  .team {
-	padding-top: 50px; 
+	background-color: #ffffff;
+	margin-top: -79px;
+	padding-top: 79px;
 	padding-bottom: 50px;
+	z-index: 90;
+}
+.team .container{
+	padding-top: 79px;
 }
  .team__title {
 	color: #292f36;
@@ -358,8 +371,12 @@ body {
 /*******************************************************************************************************************************************/
 .work {
 	background-color: #3a454d;
-	padding-top: 25px;
+	margin-top: -79px;
+	padding-top: 79px;
 	padding-bottom: 5px;
+}
+.work .container{
+	padding-top: 79px;
 }
 .work__title {
 	color: #ffffff;
@@ -418,8 +435,12 @@ body {
 }
 /*******************************************************************************************************************************************/
 .wedo {
-	padding-top: 35px;
+	margin-top: -79px;
+	padding-top: 79px;
 	padding-bottom: 55px;
+}
+.wedo .container{
+	padding-top: 79px;
 }
 .column {
 	text-align: center;
@@ -452,7 +473,11 @@ body {
 /*******************************************************************************************************************************************/
 .features {
 	background-color: #3a454d;
-	padding: 20px 0px 20px 0px;
+	margin-top: -79px;
+	padding: 79px 0px 20px 0px;
+}
+.features .container{
+	padding-top: 79px;
 }
 .features__title {
 	color: #ffffff;	
@@ -484,8 +509,12 @@ body {
 }
 /*******************************************************************************************************************************************/
 .touch {
-	padding: 20px 0px 20px 0px;
+	margin-top: -79px;
+	padding: 79px 0px 20px 0px;
 	position: relative;
+}
+.touch .container{
+	padding-top: 79px;
 }
 .touch__column{
 }
@@ -724,21 +753,13 @@ body {
 	}
 	.modest__title {
 		font-size: 36px;
-		margin-top: 90px;
-	}
-	.modest__subtitle {
-		margin-top: 40px;
 	}
 	.modest__block P{
 		margin-top: 20px;
 	}
 	.team {
-		padding-top: 90px; 
+		padding-top: 79px; 
 		padding-bottom: 90px;
-	}
-	.work {
-		padding-top: 55px;
-		padding-bottom: 7px;
 	}
 	.work__row {
 		margin-top: 25px;
@@ -747,7 +768,7 @@ body {
 		margin-top: 15px;
 	}
 	.wedo {
-		padding-top: 35px;
+		padding-top: 79px;
 		padding-bottom: 65px;
 	}
 	.wedo__img {
@@ -760,7 +781,7 @@ body {
 		margin-top: 20px;
 	}
 	.features {
-		padding: 50px 0px 75px 0px;
+		padding: 79px 0px 75px 0px;
 	}
 	.features__column {
 		margin-top: 30px;
@@ -774,10 +795,10 @@ body {
 	}
 	.touch {
 		text-align: start;
-		padding: 40px 0px 40px 0px;
+		padding: 79px 0px 40px 0px;
 	}
 	.touch__map {
-		margin-top: 40px;
+		margin-top: 85px;
 	}
 	.touch__subtitle {
 		margin-top: 10px;
@@ -842,12 +863,8 @@ body {
 		text-align: start;
 	}
 	.team {
-		padding-top: 190px; 
+		padding-top: 79px; 
 		padding-bottom: 100px;
-	}
-	.work {
-		padding-top: 85px;
-		padding-bottom: 10px;
 	}
 	.work__row {
 		margin-top: 35px;
@@ -856,7 +873,7 @@ body {
 		margin-top: 30px;
 	}
 	.wedo {
-		padding-top: 85px;
+		padding-top: 79px;
 		padding-bottom: 165px;
 	}
 	.column {
@@ -872,7 +889,7 @@ body {
 		margin-top: 30px;
 	}
 	.features {
-		padding: 90px 0px 125px 0px;
+		padding: 79px 0px 125px 0px;
 	}
 	.features__column {
 		margin-top: 60px;
@@ -885,7 +902,7 @@ body {
 	}
 	.touch {
 		text-align: start;
-		padding: 70px 0px 105px 0px;
+		padding: 79px 0px 105px 0px;
 	}
 	.touch__map {
 		margin-top: 60px;
@@ -948,6 +965,49 @@ body {
 		right: auto;
 		bottom: 1em;
 	}
+	.modest{
+		margin-top: -35px;
+		padding-top: 35px;
+	}
+	.modest .container{
+		padding-top: 35px;
+	}
+	.team{
+		margin-top: -35px;
+		padding-top: 35px;
+	}
+	.team .container{
+		padding-top: 35px;
+	}
+	.work{
+		margin-top: -35px;
+		padding-top: 35px;
+	}
+	.work .container{
+		padding-top: 35px;
+	}
+	.wedo{
+		margin-top: -35px;
+		padding-top: 35px;
+	}
+	.wedo .container{
+		padding-top: 35px;
+	}
+	.features{
+		margin-top: -35px;
+		padding-top: 35px;
+	}
+	.features .container{
+		padding-top: 35px;
+	}
+	.touch{
+		margin-top: -35px;
+		padding-top: 35px;
+	}
+	.touch .container{
+		padding-top: 35px;
+	}
+	
 	/* mobile menu */
 	.nav-mobile-menu {
 		width: 15px;
@@ -1018,3 +1078,4 @@ body {
 		height: 70px;
 	}
 }
+

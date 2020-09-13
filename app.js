@@ -71,3 +71,8 @@ modal.addEventListener("click", function(event){
 })
 
 AOS.init();
+let topOffset = document.querySelector(".header").offsetHeight - 10;
+console.log(topOffset)
+$('#nav').onePageNav({
+	scrollOffset: 85, 
+});
